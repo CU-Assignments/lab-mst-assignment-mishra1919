@@ -1,0 +1,20 @@
+class Animal {
+    void speak() {
+        System.out.println("The animal makes a sound.");
+    }
+}
+
+class Dog extends Animal {
+    void speak() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class InheritanceExample {
+    public static void main(String[] args) {
+        Animal a = new Animal();
+        Dog d = new Dog();
+        a.speak(); // The animal makes a sound.
+        d.speak(); // The dog barks.
+    }
+}
